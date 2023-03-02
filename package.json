@@ -1,0 +1,18 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserlists": "last 4 versions",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
