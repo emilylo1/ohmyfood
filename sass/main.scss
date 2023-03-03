@@ -1,0 +1,19 @@
+@import "./utils/variables";
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.homepage-header{
+    font-family: $font-logo-titles;
+    text-align: center;
+}
