@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./base/typography";
 
 html{
     box-sizing: border-box;
@@ -40,7 +41,7 @@ body{
     padding: 10px 0 30px 0;
 
     &__text{
-        font-weight: 100;
+        font-weight: map-get($font-weight, light);
     }
     &__button{
         @include explore-order-btn;
@@ -56,8 +57,7 @@ body{
     background-color: $color-background;
     justify-content: flex-start;
     width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    @include box-shadow-cards;
     margin: auto;
     position: relative;
     margin-bottom: 20px;
@@ -70,4 +70,56 @@ body{
         padding: 0 30px;
         color: gray;
     }
+}
+
+.restaurant-cards-outer{
+    background-color: $color-background;
+    padding: 20px 0;
+
+    >h2{
+        margin-left: 30px;
+    }
+}
+
+.restaurant-cards{
+    @include flex-center (column);
+    align-items: flex-start;
+    width: 80%;
+    @include box-shadow-cards;
+    margin: auto;
+    position: relative;
+    margin-bottom: 20px;
+
+    &__image{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+        height: 25vh;
+    }
+
+    &__new{
+        @include new-banners;
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+
+    &__name {
+        margin: 10px 0 5px 10px;
+    }
+
+    &__location{
+        margin: 0 0 10px 10px;
+        font-weight: map-get($map: $font-weight, $key:light );
+    }
+
+    &__icon{
+        position: absolute;
+        right: 15px;
+        bottom: 30px;
+    }
+
+
+
+
 }

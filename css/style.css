@@ -68,8 +68,8 @@ body {
   background-color: #f8f8f8;
   justify-content: flex-start;
   width: 80%;
-  border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   margin: auto;
   position: relative;
   margin-bottom: 20px;
@@ -88,6 +88,57 @@ body {
 .how-it-works-cards__icons {
   padding: 0 30px;
   color: gray;
+}
+
+.restaurant-cards-outer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+}
+.restaurant-cards-outer > h2 {
+  margin-left: 30px;
+}
+
+.restaurant-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 20px;
+}
+.restaurant-cards__image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  height: 25vh;
+}
+.restaurant-cards__new {
+  color: #278870;
+  padding: 5px 20px;
+  font-size: small;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.restaurant-cards__name {
+  margin: 10px 0 5px 10px;
+}
+.restaurant-cards__location {
+  margin: 0 0 10px 10px;
+  font-weight: 100;
+}
+.restaurant-cards__icon {
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -26,3 +26,16 @@
     width: 20px;
     height: 20px;
 }
+
+@mixin box-shadow-cards{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+@mixin new-banners{
+    color: $color-new;
+    padding: 5px 20px;
+    font-size: small;
+    border-radius: 2px;
+    background-color: $color-tertiary;
+}
