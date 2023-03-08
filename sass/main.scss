@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/typography";
+@import "./pages/menu";
 
 html{
     box-sizing: border-box;
@@ -118,8 +119,4 @@ body{
         right: 15px;
         bottom: 30px;
     }
-
-
-
-
 }

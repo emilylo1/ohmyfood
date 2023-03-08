@@ -1,0 +1,18 @@
+.menu-pages-header{
+    
+    &__heading{
+        font-family: $font-logo-titles;
+        text-align: center;
+        position: relative;
+    }
+
+    &__arrow{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+
+        &:visited{
+            color: black;
+        }
+    }
+}
