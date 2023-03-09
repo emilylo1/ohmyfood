@@ -18,10 +18,59 @@
 }
 
 .menu-pages-image{
+    background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg); 
+    @include menu-page-images;
+}
 
-    >img{
-        width: 100%;
-        height: 25vh;
-        object-fit: cover;
-    } 
+.menu-pages-image2{
+    background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    @include menu-page-images;
+}
+
+.menu-pages-image3{
+    background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    @include menu-page-images;
+}
+
+.menu-pages-image4{
+    background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    @include menu-page-images;
+}
+
+.menu-outer{
+    background-color: $color-background;
+    position: relative;
+    padding: 15px;
+    border-radius: 30px 30px 0 0;
+    top: 20vh;
+
+    >hr{
+        @include course-name-lines;
+    }
+
+    &__heading{
+        font-family: $font-logo-titles;
+        margin-left: 30px;
+    }
+
+    &__icon{
+        position: absolute;
+        right: 30px;
+        top: 35px;
+        font-size: 20px;
+    }
+
+    &__course-name{
+        text-transform: uppercase;
+        margin-left: 30px;
+        margin-bottom: 0;
+        font-weight: map-get($map: $font-weight, $key:light );
+    }
+
+    &__button{
+        @include explore-order-btn;
+        display: block;
+        margin: auto;
+        padding: 10px 50px;
+    }
 }

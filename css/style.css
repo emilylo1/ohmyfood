@@ -12,10 +12,74 @@
   color: black;
 }
 
-.menu-pages-image > img {
-  width: 100%;
+.menu-pages-image {
+  background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
   height: 25vh;
-  object-fit: cover;
+}
+
+.menu-pages-image2 {
+  background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 25vh;
+}
+
+.menu-pages-image3 {
+  background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 25vh;
+}
+
+.menu-pages-image4 {
+  background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 25vh;
+}
+
+.menu-outer {
+  background-color: #f8f8f8;
+  position: relative;
+  padding: 15px;
+  border-radius: 30px 30px 0 0;
+  top: 20vh;
+}
+.menu-outer > hr {
+  background-color: #99E2D0;
+  width: 30px;
+  margin-left: 30px;
+  border-width: 0;
+  height: 4px;
+}
+.menu-outer__heading {
+  font-family: "Shrikhand", cursive;
+  margin-left: 30px;
+}
+.menu-outer__icon {
+  position: absolute;
+  right: 30px;
+  top: 35px;
+  font-size: 20px;
+}
+.menu-outer__course-name {
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-bottom: 0;
+  font-weight: 100;
+}
+.menu-outer__button {
+  border-radius: 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: block;
+  margin: auto;
+  padding: 10px 50px;
 }
 
 html {
