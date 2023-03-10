@@ -178,13 +178,12 @@
 .menu-outer > hr {
   background-color: #99E2D0;
   width: 30px;
-  margin-left: 30px;
+  margin-left: 0;
   border-width: 0;
   height: 4px;
 }
 .menu-outer__heading {
   font-family: "Shrikhand", cursive;
-  margin-left: 30px;
 }
 .menu-outer__icon {
   position: absolute;
@@ -194,9 +193,9 @@
 }
 .menu-outer__course-name {
   text-transform: uppercase;
-  margin-left: 30px;
   margin-bottom: 0;
   font-weight: 100;
+  margin-top: 30px;
 }
 .menu-outer__button {
   border-radius: 20px;
@@ -208,6 +207,33 @@
   display: block;
   margin: auto;
   padding: 10px 50px;
+  margin-top: 50px;
+}
+
+.menu-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  flex-wrap: wrap;
+  text-align: start;
+  margin-bottom: 15px;
+}
+.menu-cards__dish {
+  flex: 1 0 50%;
+  margin: 10px 0 0 10px;
+}
+.menu-cards__sub {
+  font-weight: 100;
+  flex: 0 1 90%;
+  margin: 5px 0 10px -8px;
+}
+.menu-cards__price {
+  margin: 5px 0 10px -20px;
 }
 
 html {

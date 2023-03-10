@@ -50,7 +50,6 @@
 
     &__heading{
         font-family: $font-logo-titles;
-        margin-left: 30px;
     }
 
     &__icon{
@@ -62,9 +61,9 @@
 
     &__course-name{
         text-transform: uppercase;
-        margin-left: 30px;
         margin-bottom: 0;
         font-weight: map-get($map: $font-weight, $key:light );
+        margin-top: 30px;
     }
 
     &__button{
@@ -72,5 +71,30 @@
         display: block;
         margin: auto;
         padding: 10px 50px;
+        margin-top: 50px;
+    }
+}
+
+.menu-cards{
+    @include flex-center(row);
+    background-color: white;
+    @include box-shadow-cards;
+    flex-wrap: wrap;
+    text-align: start;
+    margin-bottom: 15px;
+
+    &__dish{
+        flex: 1 0 50%;
+        margin: 10px 0 0 10px;
+    }
+
+    &__sub{
+        font-weight: map-get($font-weight, light);
+        flex: 0 1 90%;
+        margin: 5px 0 10px -8px;
+    }
+
+    &__price{
+        margin: 5px 0 10px -20px;
     }
 }
