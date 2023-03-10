@@ -1,8 +1,9 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/typography";
-@import "./pages/homepage";
-@import "./pages/menu";
+@import "./layouts/layout";
+@import "./pages/homepage.scss";
+@import "./pages/menu.scss";
 
 html{
     box-sizing: border-box;
@@ -18,3 +19,4 @@ body{
     font-family: $font-main;
     font-size: 15px;
 }
+

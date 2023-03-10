@@ -1,3 +1,24 @@
+.footer {
+  background-color: #333333;
+  color: white;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+  padding: 15px;
+}
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 15px 20px 15px;
+}
+.footer__list > li {
+  padding: 5px;
+}
+.footer__icons {
+  margin-right: 10px;
+}
+
 .homepage-header {
   font-family: "Shrikhand", cursive;
   text-align: center;
