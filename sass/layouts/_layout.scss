@@ -1,6 +1,8 @@
 .footer{
     background-color: $color-background-footer;
     color: white;
+    width: 100%;
+    position: absolute;
 
     &__logo{
         font-family: $font-logo-titles;
