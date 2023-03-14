@@ -17,6 +17,10 @@
 .footer__list > li {
   padding: 5px;
 }
+.footer__list > li > a {
+  color: white;
+  text-decoration: none;
+}
 .footer__icons {
   margin-right: 10px;
 }
@@ -119,6 +123,8 @@
   margin: auto;
   position: relative;
   margin-bottom: 20px;
+  text-decoration: none;
+  color: black;
 }
 .restaurant-cards__image {
   width: 100%;
