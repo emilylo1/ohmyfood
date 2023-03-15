@@ -1,3 +1,11 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .footer {
   background-color: #333333;
   color: white;
@@ -66,6 +74,10 @@
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.book-menu__button:hover {
+  opacity: 0.8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+}
 
 .how-it-works-heading {
   margin-left: 30px;
@@ -86,6 +98,9 @@
   position: relative;
   margin-bottom: 20px;
 }
+.how-it-works-cards:hover {
+  background-color: #ece1f9;
+}
 .how-it-works-cards__icons-numbers {
   position: absolute;
   left: -10px;
@@ -100,6 +115,9 @@
 .how-it-works-cards__icons {
   padding: 0 30px;
   color: gray;
+}
+.how-it-works-cards__icons :hover {
+  color: #9356DC;
 }
 
 .restaurant-cards-outer {
@@ -237,6 +255,10 @@
   margin: auto;
   padding: 10px 50px;
   margin-top: 50px;
+}
+.menu-outer__button:hover {
+  opacity: 0.8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
 }
 
 .menu-cards {

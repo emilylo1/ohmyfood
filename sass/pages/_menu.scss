@@ -72,6 +72,10 @@
         margin: auto;
         padding: 10px 50px;
         margin-top: 50px;
+        &:hover{
+            opacity: 0.8;
+            box-shadow: $box-shadow-dark;
+        }
     }
 }
 
@@ -98,3 +102,4 @@
         margin: 5px 0 10px -20px;
     }
 }
+

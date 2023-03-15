@@ -26,6 +26,10 @@
     }
     &__button{
         @include explore-order-btn;
+        &:hover{
+            opacity: 0.8;
+            box-shadow: $box-shadow-dark;
+        };
     }
 }
 
@@ -42,6 +46,9 @@
     margin: auto;
     position: relative;
     margin-bottom: 20px;
+    &:hover{
+        background-color: lighten($color-primary, 33%);
+    }
 
     &__icons-numbers{
         @include number-icons;
@@ -50,6 +57,9 @@
     &__icons{
         padding: 0 30px;
         color: gray;
+        :hover{
+            color: $color-primary;
+        }
     }
 }
 
