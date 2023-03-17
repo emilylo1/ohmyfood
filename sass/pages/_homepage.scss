@@ -1,3 +1,16 @@
+#loader-position{
+    @include loader-position;
+}
+
+#loader{
+    @include loader;
+    animation: spin 3s linear infinite;
+}
+
+main{
+    animation: homepage 0ms 3s both;
+}
+
 .homepage-header{
     font-family: $font-logo-titles;
     text-align: center;
@@ -57,7 +70,7 @@
     &__icons{
         padding: 0 30px;
         color: gray;
-        :hover{
+        &:hover{
             color: $color-primary;
         }
     }

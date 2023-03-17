@@ -6,3 +6,30 @@
       opacity: 1;
     }
   }
+
+@keyframes spin{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-background{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes homepage{
+  0%{
+    transform: translateX(-9999px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
