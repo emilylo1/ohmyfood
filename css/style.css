@@ -342,6 +342,22 @@ main {
   margin: 5px 0 10px -20px;
 }
 
+.menu-cards-animation {
+  animation: fadeIn 3s backwards;
+}
+
+.entrees {
+  animation-delay: 0.5s;
+}
+
+.main-dish {
+  animation-delay: 1s;
+}
+
+.desserts {
+  animation-delay: 1.5s;
+}
+
 html {
   box-sizing: border-box;
 }
