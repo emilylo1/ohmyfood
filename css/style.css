@@ -30,6 +30,57 @@
     transform: translateX(0);
   }
 }
+@keyframes full-heart {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.4);
+  }
+  100% {
+    transform: translateY(-200px) translateX(1) scale(1);
+    opacity: 1;
+  }
+}
+.restaurant-icons {
+  border: none;
+  background-color: transparent;
+  overflow: hidden;
+}
+.restaurant-icons .solid {
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  opacity: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform-origin: bottom;
+}
+.restaurant-icons:hover .solid {
+  opacity: 1;
+  animation: full-heart 0.8s ease-in-out;
+}
+.restaurant-icons:hover .empty {
+  transition-duration: 1s;
+  opacity: 0;
+}
+
+.menu-outer__icon {
+  border: none;
+  background-color: transparent;
+  overflow: hidden;
+}
+.menu-outer__icon .solid {
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  opacity: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform-origin: bottom;
+}
+.menu-outer__icon:hover .solid {
+  opacity: 1;
+  animation: full-heart 0.8s ease-in-out;
+}
+.menu-outer__icon:hover .empty {
+  transition-duration: 1s;
+  opacity: 0;
+}
+
 .footer {
   background-color: #333333;
   color: white;

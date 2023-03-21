@@ -1,0 +1,51 @@
+.restaurant-icons{
+    border: none;
+    background-color: transparent;
+    overflow: hidden;
+
+    .solid{
+        background-image: $linear-gradient;
+        opacity: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform-origin: bottom;
+    }
+
+    &:hover{
+        .solid{
+            opacity: 1;
+            animation: full-heart 0.8s ease-in-out;
+        }
+
+        .empty{
+            transition-duration: 1s;
+            opacity: 0;
+        }
+    }
+}
+
+.menu-outer__icon{
+    border: none;
+    background-color: transparent;
+    overflow: hidden;
+
+    .solid{
+        background-image: $linear-gradient;
+        opacity: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform-origin: bottom;
+    }
+
+    &:hover{
+        .solid{
+            opacity: 1;
+            animation: full-heart 0.8s ease-in-out;
+        }
+
+        .empty{
+            transition-duration: 1s;
+            opacity: 0;
+        }
+    }
+}
