@@ -369,28 +369,68 @@ main {
 
 .menu-cards {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   flex-wrap: wrap;
-  text-align: start;
   margin-bottom: 15px;
+  max-width: 100%;
 }
-.menu-cards__dish {
-  flex: 1 0 50%;
-  margin: 10px 0 0 10px;
+.menu-cards__text {
+  flex-grow: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 1rem;
 }
-.menu-cards__sub {
-  font-weight: 100;
-  flex: 0 1 90%;
-  margin: 5px 0 10px -8px;
+.menu-cards__text > h4 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+.menu-cards__text p {
+  margin: 0;
 }
 .menu-cards__price {
-  margin: 5px 0 10px -20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 1rem;
+}
+.menu-cards__tick {
+  width: 4rem;
+  transition: 0.5s;
+  margin-right: -4rem;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-cards__tick-wrap {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  border-radius: 5rem;
+  transform: rotate(180deg);
+  transition-duration: 0.75s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-cards i {
+  color: #99E2D0;
+}
+
+.menu-cards:hover .menu-cards__tick {
+  margin-right: 0rem;
+}
+
+.menu-cards:hover .menu-cards__tick-wrap {
+  transform: rotate(0);
 }
 
 .menu-cards-animation {

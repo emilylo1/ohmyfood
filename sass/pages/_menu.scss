@@ -80,27 +80,74 @@
 }
 
 .menu-cards{
-    @include flex-center(row);
+    display: flex;
+    width: 100%;
+    overflow: hidden;
     background-color: white;
     @include box-shadow-cards;
     flex-wrap: wrap;
-    text-align: start;
     margin-bottom: 15px;
+    max-width: 100%;
 
-    &__dish{
-        flex: 1 0 50%;
-        margin: 10px 0 0 10px;
-    }
+    &__text{
+        flex-grow: 1;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: 1rem;
 
-    &__sub{
-        font-weight: map-get($font-weight, light);
-        flex: 0 1 90%;
-        margin: 5px 0 10px -8px;
+        & > h4{
+            margin: 0;
+            padding-bottom: 5px;
+        }
+
+        & p{
+            margin: 0;
+        }
     }
 
     &__price{
-        margin: 5px 0 10px -20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: 1rem;
     }
+
+    &__tick{
+        width: 4rem;
+        transition: 0.5s;
+        margin-right: -4rem;
+        background-color: $color-tertiary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__tick-wrap{
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: white;
+        border-radius: 5rem;
+        transform: rotate(180deg);
+        transition-duration: 0.75s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & i{
+        color: $color-tertiary;
+    }
+}
+
+.menu-cards:hover .menu-cards__tick{
+    margin-right: 0rem;
+}
+.menu-cards:hover .menu-cards__tick-wrap{
+    transform: rotate(0);
 }
 
 .menu-cards-animation{
