@@ -29,6 +29,11 @@ main{
     }
 }
 
+.book-menu-outer{
+    @include desktop{
+        font-size: 18px;
+    }
+}
 .book-menu{
     @include flex-center (column);
     background-color: $color-background;
@@ -46,6 +51,14 @@ main{
     }
 }
 
+.how-it-works-cards-wrapper{
+    @include desktop{
+        display: flex;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+}
+
 .how-it-works-heading{
     margin-left: 30px;
 }
@@ -59,6 +72,9 @@ main{
     margin: auto;
     position: relative;
     margin-bottom: 20px;
+    @include desktop{
+        width: 30%;
+    }
     &:hover{
         background-color: lighten($color-primary, 33%);
     }
@@ -79,9 +95,19 @@ main{
 .restaurant-cards-outer{
     background-color: $color-background;
     padding: 20px 0;
+    @include desktop{
+        font-size: 18px;
+    }
 
     >h2{
         margin-left: 30px;
+    }
+}
+
+.restaurant-cards-wrapper{
+    @include desktop{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -95,6 +121,9 @@ main{
     margin-bottom: 20px;
     text-decoration: none;
     color: black;
+    @include desktop{
+        width: 40%;
+    }
 
     &__image{
         width: 100%;

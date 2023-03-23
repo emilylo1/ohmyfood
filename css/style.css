@@ -87,6 +87,16 @@
   width: 100%;
   padding-top: 10px;
 }
+@media screen and (min-width: 992px) {
+  .footer {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}
 .footer__logo {
   font-family: "Shrikhand", cursive;
   margin: 0;
@@ -96,6 +106,18 @@
   list-style: none;
   margin: 0;
   padding: 0 15px 20px 15px;
+}
+@media screen and (min-width: 992px) {
+  .footer__list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__list {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 .footer__list > li {
   padding: 5px;
@@ -160,6 +182,12 @@ main {
   left: -30px;
 }
 
+@media screen and (min-width: 992px) {
+  .book-menu-outer {
+    font-size: 18px;
+  }
+}
+
 .book-menu {
   display: flex;
   justify-content: center;
@@ -185,6 +213,14 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
 }
 
+@media screen and (min-width: 992px) {
+  .how-it-works-cards-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
+
 .how-it-works-heading {
   margin-left: 30px;
 }
@@ -203,6 +239,11 @@ main {
   margin: auto;
   position: relative;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  .how-it-works-cards {
+    width: 30%;
+  }
 }
 .how-it-works-cards:hover {
   background-color: #ece1f9;
@@ -230,8 +271,20 @@ main {
   background-color: #f8f8f8;
   padding: 20px 0;
 }
+@media screen and (min-width: 992px) {
+  .restaurant-cards-outer {
+    font-size: 18px;
+  }
+}
 .restaurant-cards-outer > h2 {
   margin-left: 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .restaurant-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .restaurant-cards {
@@ -249,6 +302,11 @@ main {
   margin-bottom: 20px;
   text-decoration: none;
   color: black;
+}
+@media screen and (min-width: 992px) {
+  .restaurant-cards {
+    width: 40%;
+  }
 }
 .restaurant-cards__image {
   width: 100%;
@@ -328,6 +386,19 @@ main {
   border-radius: 30px 30px 0 0;
   margin-top: -5vh;
 }
+@media screen and (min-width: 992px) {
+  .menu-outer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-outer {
+    font-size: 18px;
+  }
+}
 .menu-outer > hr {
   background-color: #99E2D0;
   width: 30px;
@@ -391,6 +462,7 @@ main {
 }
 .menu-cards__text p {
   margin: 0;
+  font-weight: 100;
 }
 .menu-cards__price {
   display: flex;
