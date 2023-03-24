@@ -71,6 +71,7 @@ main{
     @include box-shadow-cards;
     margin: auto;
     position: relative;
+    cursor: pointer;
     margin-bottom: 20px;
     @include desktop{
         width: 30%;
