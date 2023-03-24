@@ -1,3 +1,5 @@
+/* menu items fade in */
+
 @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -6,6 +8,8 @@
       opacity: 1;
     }
   }
+
+/* homepage loader and spinner */
 
 @keyframes spin{
   0%{
@@ -33,6 +37,8 @@
     transform: translateX(0);
   }
 }
+
+/* heart animation */
 
 @keyframes full-heart{
   0%{
