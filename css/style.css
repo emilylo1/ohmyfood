@@ -1,3 +1,4 @@
+/* menu items fade in */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -6,6 +7,7 @@
     opacity: 1;
   }
 }
+/* homepage loader and spinner */
 @keyframes spin {
   0% {
     transform: rotate(0);
@@ -30,6 +32,7 @@
     transform: translateX(0);
   }
 }
+/* heart animation */
 @keyframes full-heart {
   0% {
     transform: translateY(0) translateX(0) scale(0.4);
@@ -39,6 +42,7 @@
     opacity: 1;
   }
 }
+/* Heart icons */
 .restaurant-icons {
   border: none;
   background-color: transparent;
@@ -238,6 +242,7 @@ main {
   border-radius: 10px;
   margin: auto;
   position: relative;
+  cursor: pointer;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 992px) {
