@@ -9,6 +9,7 @@
         background-image: $linear-gradient;
         opacity: 0;
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         transform-origin: bottom;
     }
@@ -16,7 +17,8 @@
     &:hover{
         .solid{
             opacity: 1;
-            animation: full-heart 0.8s ease-in-out;
+            transition-duration: 0.8s;
+            /*animation: full-heart 0.8s ease-in-out;*/
         }
 
         .empty{
@@ -35,6 +37,7 @@
         background-image: $linear-gradient;
         opacity: 0;
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         transform-origin: bottom;
     }
