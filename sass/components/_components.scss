@@ -38,12 +38,13 @@
         -webkit-text-fill-color: transparent;
         transform-origin: bottom;
     }
-
+    
     &:hover{
         .solid{
             opacity: 1;
-            animation: full-heart 0.8s ease-in-out;
-        }
+            transition-duration: 0.8s;
+            /*animation: full-heart 0.8s ease-in-out;*/
+        } 
 
         .empty{
             transition-duration: 1s;

@@ -35,10 +35,10 @@
 /* heart animation */
 @keyframes full-heart {
   0% {
-    transform: translateY(0) translateX(0) scale(0.4);
+    transform: translateY(0);
   }
   100% {
-    transform: translateY(-200px) translateX(1) scale(1);
+    transform: translateY(-200px);
     opacity: 1;
   }
 }
@@ -78,7 +78,8 @@
 }
 .menu-outer__icon:hover .solid {
   opacity: 1;
-  animation: full-heart 0.8s ease-in-out;
+  transition-duration: 0.8s;
+  /*animation: full-heart 0.8s ease-in-out;*/
 }
 .menu-outer__icon:hover .empty {
   transition-duration: 1s;
@@ -166,7 +167,6 @@ main {
 }
 
 .homepage-header {
-  font-family: "Shrikhand", cursive;
   text-align: center;
 }
 
@@ -351,6 +351,7 @@ main {
   position: absolute;
   top: 30px;
   left: 30px;
+  color: black;
 }
 .menu-pages-header__arrow:visited {
   color: black;
