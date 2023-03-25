@@ -95,7 +95,7 @@
     overflow: hidden;
     background-color: white;
     @include box-shadow-cards;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-bottom: 15px;
     max-width: 100%;
 
@@ -109,11 +109,15 @@
         & > h4{
             margin: 0;
             padding-bottom: 5px;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
 
         & p{
             margin: 0;
             font-weight: map-get($font-weight, light);
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
     }
 

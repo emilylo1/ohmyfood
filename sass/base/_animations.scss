@@ -42,10 +42,10 @@
 
 @keyframes full-heart{
   0%{
-    transform: translateY(0) /*translateX(0) scale(0.4)*/;
+    transform: translateY(0) translateX(0) scale(0.4);
   }
   100%{
-    transform: translateY(-200px) /*translateX(0) scale(1)*/;
+    transform: translateY(-200px) translateX(100%) scale(1);
     opacity: 1;
   }
 }

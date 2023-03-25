@@ -35,10 +35,10 @@
 /* heart animation */
 @keyframes full-heart {
   0% {
-    transform: translateY(0);
+    transform: translateY(0) translateX(0) scale(0.4);
   }
   100% {
-    transform: translateY(-200px);
+    transform: translateY(-200px) translateX(100%) scale(1);
     opacity: 1;
   }
 }
@@ -454,7 +454,7 @@ main {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 15px;
   max-width: 100%;
 }
@@ -468,10 +468,14 @@ main {
 .menu-cards__text > h4 {
   margin: 0;
   padding-bottom: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-cards__text p {
   margin: 0;
   font-weight: 100;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-cards__price {
   display: flex;
